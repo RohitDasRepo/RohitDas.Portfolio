@@ -10,24 +10,14 @@
   <main>
     {{ content }}
   </main>
-
   <script>
-    // Scroll reveal with stagger effect
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => {
-            entry.target.classList.add("visible");
-          }, index * 120);
-        } else {
-          entry.target.classList.remove("visible");
-        }
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("visible");
+        else entry.target.classList.remove("visible");
       });
     }, { threshold: 0.15 });
-
-    document.querySelectorAll(".fade-in").forEach(el => {
-      observer.observe(el);
-    });
+    document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
