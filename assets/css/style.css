@@ -1,14 +1,77 @@
-body { font-family: "Segoe UI", Arial, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; line-height: 1.6; }
-header { text-align: center; padding: 30px 20px; border-bottom: 2px solid #007acc; }
-header img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid #007acc; display: block; margin: 0 auto 10px auto; }
-header h1 { margin: 5px 0; font-size: 1.6rem; }
-header p { margin: 0; color: #555; }
-.social-buttons { margin-top: 15px; }
-.social-buttons a { display: inline-block; margin: 5px; padding: 8px 16px; background: #007acc; color: white !important; text-decoration: none; border-radius: 5px; font-size: 0.9rem; transition: all 0.3s ease; }
-.social-buttons a:hover { background: #005b99; transform: scale(1.05); }
-.container { max-width: 900px; margin: auto; padding: 20px; }
-h2 { border-bottom: 1px solid #ddd; padding-bottom: 4px; margin-top: 30px; font-size: 1.2rem; color: #007acc; opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
-h2.visible { opacity: 1; transform: translateY(0); }
-/* Fade-in Animation for sections */
-.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
-.fade-in.visible { opacity: 1; transform: translateY(0); }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background: #007acc;
+  color: white;
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+header h1 {
+  margin: 10px 0 5px;
+}
+
+header p {
+  margin: 5px 0 15px;
+}
+
+.buttons .btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 14px;
+  background: white;
+  color: #007acc;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.buttons .btn:hover {
+  background: #e6f2ff;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #007acc;
+}
+
+/* Fade-in and fade-out animation */
+.fade-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

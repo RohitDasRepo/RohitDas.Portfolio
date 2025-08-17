@@ -1,77 +1,101 @@
----
-layout: default
-title: "Rohit Das"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit Das - Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <img src="assets/images/profile.jpg" alt="Rohit Das">
+    <h1>Rohit Das</h1>
+    <p>Java Developer | Spring Boot | Microservices</p>
+    <div class="buttons">
+      <a href="assets/Rohit_das_Resume.pdf" target="_blank" class="btn">📄 Resume</a>
+      <a href="https://www.linkedin.com/in/rohit-das-03b2a016b/" target="_blank" class="btn">🔗 LinkedIn</a>
+      <a href="mailto:rdsrdsrds8@gmail.com" class="btn">✉️ Email</a>
+      <a href="tel:+918789297179" class="btn">📱 Call</a>
+    </div>
+  </header>
 
-<header>
-  <img src="assets/images/profile.jpg" alt="Rohit Das">
-  <h1>Rohit Das</h1>
-  <p>Java Developer | Spring Boot | Microservices</p>
+  <main>
+    <section class="fade-section">
+      <h2>💼 Professional Summary</h2>
+      <p>Java Developer with 4 years of experience designing and developing scalable enterprise applications using
+      Java, Spring Boot, and Microservices. Skilled in REST APIs, Hibernate JPA, MySQL, RabbitMQ, CI/CD, and Agile methodologies.</p>
+    </section>
 
-  <div class="social-buttons">
-    <a href="assets/Rohit_das_Resume.pdf" target="_blank">📄 Resume</a>
-    <a href="https://www.linkedin.com/in/rohit-das-03b2a016b/" target="_blank">🔗 LinkedIn</a>
-    <a href="mailto:rdsrdsrds8@gmail.com">📧 Email</a>
-    <a href="tel:+918789297179">📱 Call</a>
-  </div>
-</header>
+    <section class="fade-section">
+      <h2>🛠️ Technical Skills</h2>
+      <ul>
+        <li><b>Languages:</b> Java, SQL</li>
+        <li><b>Frameworks:</b> Spring Boot, RabbitMQ, Hibernate JPA, Microservices, MVC</li>
+        <li><b>Tools:</b> Eclipse, STS, Swagger, Postman, Git, JMeter</li>
+        <li><b>Databases:</b> MySQL</li>
+        <li><b>Concepts:</b> REST APIs, Kafka, Spring Security, Exception Handling, Load Testing, Agile, CI/CD</li>
+      </ul>
+    </section>
 
-<div class="container">
-  <section class="fade-in">
-    <h2>💼 Professional Summary</h2>
-    <p>Java Developer with 4 years of experience building scalable enterprise applications using <b>Java</b>, <b>Spring Boot</b>, and <b>Microservices</b>. Skilled in REST APIs, Hibernate JPA, MySQL, RabbitMQ, CI/CD, and Agile methodologies.</p>
-  </section>
+    <section class="fade-section">
+      <h2>💼 Experience</h2>
+      <h3>Software Developer | 6D Technologies</h3>
+      <p>Bangalore | Nov 2023 – Present</p>
+      <ul>
+        <li>Developed scalable REST APIs in Java and Spring Boot for telecom modules.</li>
+        <li>Integrated third-party APIs and resolved production issues.</li>
+        <li>Worked with QA/DevOps on CI/CD pipelines.</li>
+      </ul>
 
-  <section class="fade-in">
-    <h2>🛠️ Technical Skills</h2>
-    <ul>
-      <li><b>Languages:</b> Java, SQL</li>
-      <li><b>Frameworks:</b> Spring Boot, RabbitMQ, Hibernate JPA, Microservices, MVC</li>
-      <li><b>Tools:</b> Eclipse, STS, Swagger, Postman, Git, JMeter</li>
-      <li><b>Databases:</b> MySQL</li>
-      <li><b>Concepts:</b> REST APIs, Kafka, Spring Security, Exception Handling, Load Testing, Agile, CI/CD</li>
-    </ul>
-  </section>
+      <h3>Java Developer | Krisko Software Pvt. Ltd.</h3>
+      <p>Bangalore | Aug 2021 – Sep 2023</p>
+      <ul>
+        <li>Contributed to Enterprise Budget Management System for BEL.</li>
+        <li>Built REST APIs using Java, Spring Boot, Hibernate.</li>
+        <li>Authored SDLC docs including SRD, SDD, TVPL, and user manuals.</li>
+      </ul>
+    </section>
 
-  <section class="fade-in">
-    <h2>💼 Experience</h2>
-    <h3>Software Developer | 6D Technologies</h3>
-    <p><i>Bangalore | Nov 2023 – Present</i></p>
-    <ul>
-      <li>Developed scalable REST APIs in Java and Spring Boot for telecom modules.</li>
-      <li>Integrated third-party APIs and resolved production issues.</li>
-      <li>Worked with QA/DevOps on CI/CD pipelines.</li>
-    </ul>
-    <h3>Java Developer | Krisko Software Pvt. Ltd.</h3>
-    <p><i>Bangalore | Aug 2021 – Sep 2023</i></p>
-    <ul>
-      <li>Contributed to Enterprise Budget Management System for BEL.</li>
-      <li>Built REST APIs using Java, Spring Boot, Hibernate.</li>
-      <li>Authored SDLC docs including SRD, SDD, TVPL, and user manuals.</li>
-    </ul>
-  </section>
+    <section class="fade-section">
+      <h2>🎓 Education</h2>
+      <ul>
+        <li><b>B.E. in Computer Science</b>, Techno India University – CGPA: 8.75</li>
+        <li><b>Intermediate</b>, Inter Silli College – 58%</li>
+        <li><b>Matric</b>, Ursuline English Medium School – 82% (ICSE)</li>
+      </ul>
+    </section>
 
-  <section class="fade-in">
-    <h2>🎓 Education</h2>
-    <ul>
-      <li><b>B.E. in Computer Science</b>, Techno India University – CGPA: 8.75</li>
-      <li><b>Intermediate</b>, Inter Silli College – 58%</li>
-      <li><b>Matric</b>, Ursuline English Medium School – 82% (ICSE)</li>
-    </ul>
-  </section>
+    <section class="fade-section">
+      <h2>📜 Certifications</h2>
+      <ul>
+        <li>C Programming (IIT Kharagpur, NPTEL)</li>
+        <li>C++ (IIT Bombay, NPTEL)</li>
+        <li>Soft Skills (IIT Kanpur)</li>
+        <li>Spoken English (IIT Madras)</li>
+      </ul>
+    </section>
 
-  <section class="fade-in">
-    <h2>📜 Certifications</h2>
-    <ul>
-      <li>C Programming (IIT Kharagpur, NPTEL)</li>
-      <li>C++ (IIT Bombay, NPTEL)</li>
-      <li>Soft Skills (IIT Kanpur)</li>
-      <li>Spoken English (IIT Madras)</li>
-    </ul>
-  </section>
+    <section class="fade-section">
+      <h2>🌟 Soft Skills</h2>
+      <p>Teamwork • Leadership • Analytical Thinking • Communication • Problem Solving • Positive Attitude</p>
+    </section>
+  </main>
 
-  <section class="fade-in">
-    <h2>🌟 Soft Skills</h2>
-    <p>Teamwork • Leadership • Analytical Thinking • Communication • Problem Solving • Positive Attitude</p>
-  </section>
-</div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const observerOptions = { threshold: 0.2 };
+      const toggleVisibility = (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      };
+      const observer = new IntersectionObserver(toggleVisibility, observerOptions);
+      document.querySelectorAll(".fade-section").forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
