@@ -3,12 +3,14 @@ layout: default
 title: "Rohit Das"
 ---
 
-<div class="profile">
-  <img src="assets/images/profile.jpg" alt="Rohit Das" class="profile-pic" />
-  <h1>Rohit Das</h1>
-  <p><strong>Java Developer | Spring Boot | Microservices</strong></p>
-  <a href="assets/Rohit_das_Resume.pdf" class="btn" target="_blank">📄 Download Resume</a>
-</div>
+<header>
+  <img src="assets/images/profile.jpg" alt="Rohit Das">
+  <div>
+    <h1>Rohit Das</h1>
+    <p>Java Developer | Spring Boot | Microservices</p>
+    <a href="assets/Rohit_das_Resume.pdf" class="btn" target="_blank">📄 Download Resume</a>
+  </div>
+</header>
 
 <div class="container">
   <div class="sidebar">

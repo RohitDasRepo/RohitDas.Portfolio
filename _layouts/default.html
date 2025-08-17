@@ -12,18 +12,18 @@
   </main>
 
   <script>
-    // Smooth staggered fade-in for each section
+    // Scroll reveal with stagger effect
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
           setTimeout(() => {
             entry.target.classList.add("visible");
-          }, index * 150); // stagger delay
+          }, index * 120);
         } else {
           entry.target.classList.remove("visible");
         }
       });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.15 });
 
     document.querySelectorAll(".fade-in").forEach(el => {
       observer.observe(el);
