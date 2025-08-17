@@ -7,53 +7,26 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <canvas id="cursor-glow"></canvas>
   <main>
     {{ content }}
   </main>
 
   <script>
-    // Fade in/out sections on scroll
+    // Smooth staggered fade-in for each section
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
+          setTimeout(() => {
+            entry.target.classList.add("visible");
+          }, index * 150); // stagger delay
         } else {
-          entry.target.classList.remove("visible"); // fade out when leaving
+          entry.target.classList.remove("visible");
         }
       });
     }, { threshold: 0.2 });
 
     document.querySelectorAll(".fade-in").forEach(el => {
       observer.observe(el);
-    });
-
-    // Glowing cursor effect
-    const canvas = document.getElementById("cursor-glow");
-    const ctx = canvas.getContext("2d");
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    let mouse = { x: -200, y: -200 };
-
-    window.addEventListener("mousemove", (e) => {
-      mouse.x = e.clientX;
-      mouse.y = e.clientY;
-      drawGlow();
-    });
-
-    function drawGlow() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      let gradient = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, 100);
-      gradient.addColorStop(0, "rgba(0, 150, 255, 0.4)");
-      gradient.addColorStop(1, "rgba(0, 150, 255, 0)");
-      ctx.fillStyle = gradient;
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-    }
-
-    window.addEventListener("resize", () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
     });
   </script>
 </body>
