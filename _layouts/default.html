@@ -11,13 +11,29 @@
     {{ content }}
   </main>
   <script>
-    const observer = new IntersectionObserver((entries) => {
+    // Observer for sections
+    const sectionObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add("visible");
-        else entry.target.classList.remove("visible");
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible");
+        }
       });
-    }, { threshold: 0.15 });
-    document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+    }, { threshold: 0.2 });
+    document.querySelectorAll(".fade-in").forEach(el => sectionObserver.observe(el));
+
+    // Observer for headings
+    const headingObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible");
+        }
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll("h2").forEach(el => headingObserver.observe(el));
   </script>
 </body>
 </html>
