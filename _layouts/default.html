@@ -4,33 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | {{ site.title }}</title>
-  {{ content }}
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="cursor-glow"></div>
-  <main class="container">
+  <main>
     {{ content }}
   </main>
 
   <script>
-    // Cursor Glow
-    const cursor = document.querySelector(".cursor-glow");
-    document.addEventListener("mousemove", (e) => {
-      cursor.style.left = e.clientX + "px";
-      cursor.style.top = e.clientY + "px";
-    });
-
-    // Fade in headings & sections once
+    // Fade in sections when scrolled into view
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
-          observer.unobserve(entry.target); // fade only once
+          observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.2 });
 
-    document.querySelectorAll("h1, h2, h3, section").forEach(el => {
+    document.querySelectorAll(".fade-in").forEach(el => {
       observer.observe(el);
     });
   </script>
